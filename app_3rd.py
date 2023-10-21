@@ -2,8 +2,8 @@ import streamlit as st
 import pandas as pd
 import joblib
 
-Inputs = joblib.load(r"F:\data science\final project\islam taha\restaurant\Inputs.pkl")
-Model = joblib.load(r"F:\data science\final project\islam taha\restaurant\Model.pkl")
+Inputs = joblib.load("Inputs.pkl")
+Model = joblib.load("Model.pkl")
 
 def prediction(online_order,book_table,votes,location,
        approx_cost_for_two_people,listed_in_type):
